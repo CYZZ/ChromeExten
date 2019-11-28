@@ -1,18 +1,43 @@
 {
-   "background": "background.html",
-   "browser_action": {
-      "default_icon": "logo.png",
-      "default_popup": "popup.html"
-   },
-   "description": "我是cyz开发的一个插件，功能有待完善",
-   "icons": {
-      "128": "logo_128.png",
-      "16": "logo_16.png",
-      "48": "logo_48.png"
-   },
-   "manifest_version": 2,
-   "name": "我是个测试demo",
-   "permissions": [ "contextMenus", "tabs", "http://*/*", "http://*/*/*" ],
-   "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "2.1"
+  "background":
+  {
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_popup": "popup.html"
+  },
+  "description": "可以在这个demo中进行添加各种神奇的功能",
+  "icons": {
+    "128": "logo_128.png",
+    "16": "logo_16.png",
+    "48": "logo_48.png"
+  },
+  "manifest_version": 2,
+  "name": "这是个测试demo",
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "http://*/*",
+    "http://*/*/*",
+    "declarativeContent",
+    "contextMenus",
+    "tabs"
+  ],
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "options_page": "options.html",
+  "options_ui":
+  {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "version": "2.2",
+  "content_scripts":
+  [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/jquery-1.8.3.js"],
+      "run_at": "document_start"
+    }
+  ]
 }

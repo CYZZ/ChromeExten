@@ -1,26 +1,29 @@
-﻿<!DOCTYPE HTML>
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title></title>
-	
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.qrcode.js"></script>
-	<script src="js/qrcode.js"></script>
+    <meta charset="UTF-8">
+    <title>popup页面</title>
+    <style>
+        body {
+            width: 500px;
+            min-height: 100px;
+        }
+
+        a {
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-	<table style="width:400px">
-		<tr>
-			<td><div id="qrDiv" style="width:180px;height:180px;"></div><p style="font-size:13px;margin-left:20%;">你想看到什么？</p></td>
-			<td style="font-size:13px;">
-			
-			 <p>标题:<input id="qr_webname"></p>
-			 <p>地址:<input id="qr_website"></p>
-			 <p style="font-size:11px" id="qr_a">这是个测试弹窗，后续功能。。。</p>
-			</td>
-		</tr>
-	</table>
-	<script src="js/qr.js"></script>
+<h1>这是主pop页面</h1>
+<h2>窗口操作演示</h2>
+<a href="#" id="open_new_window">新建一个空白窗口</a>
+<h2>标签操作</h2>
+<a href="#" id="open_new_tab_bd">新建标签百度</a>
+<h2>icon操作</h2>
+<a href="#" id="show_badge">显示badge</a>
+<a href="#" id="hide_badge">隐藏badge</a>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
 </body>
 </html>
-<!--onload="but1()" -->
