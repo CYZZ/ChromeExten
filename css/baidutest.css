@@ -1,20 +1,31 @@
-#qrcode .sub-title {
-    color: #f87;
-    font-size: 40px;
-    line-height: 14px;
-    font-weight: 300;
-}
-
-body {
-    color: #387;
-    background: #780;
-    margin: 0;
-    padding: 0;
-    font-family: Georgia, Palatino, serif;
-}
-
+/*csdn*/
 .title-article {
-    color: #a6f;
+    color: #64f;
     font-size: 40px;
     word-wrap: break-word;
+}
+div[data-pid="blog"] {
+    display: none;
+}
+
+a[title="脉脉"] {
+    visibility: hidden;
+    display: none;
+}
+
+
+/*隐藏简书的推荐栏目*/
+div > section._3Z3nHf{
+    /*visibility: hidden;*/
+    display: none;
+}
+
+/* 隐藏简书广告*/
+aside > section.-umr26 {
+    display: none;
+}
+
+div > section[aria-label="youdao-ad"]{
+    /*visibility: hidden;*/
+    display: none;
 }

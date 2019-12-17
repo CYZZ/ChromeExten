@@ -37,12 +37,13 @@
     {
       "matches": ["<all_urls>"],
       "js": ["js/jquery-1.8.3.js"],
-      "run_at": "document_start"
+      "run_at": "document_start",
+      "css": ["css/baidutest.css"]
     }
   ],
   "omnibox": { "keyword" : "my" },
   "chrome_url_overrides":
   {
-    "newtab": "newtab.html"
+//    "newtab": "newtab.html"
   }
 }
